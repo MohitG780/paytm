@@ -86,9 +86,9 @@ res.status(411).json({
 })
 
 const updateBody=zod.object({
-    password:zod.string.Optional(),
-    firstname:zod.string.Optional(),
-    lastname:zod.string.Optional()
+    password:zod.string().optional(),
+    firstname:zod.string().optional(),
+    lastname:zod.string().optional()
 })
 
 router.put("/",authMiddleware,async(req,res)=>{
@@ -131,4 +131,4 @@ router.get("/bulk",async(req,res)=>{
         }))
     })
 })
-module.exports=userrouter;
+module.exports=router;
