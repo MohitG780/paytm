@@ -86,9 +86,9 @@ res.status(411).json({
 })
 
 const updateBody=zod.object({
-    password:zod.string.optional(),
-    firstname:zod.string.optional(),
-    lastname:zod.string.optional()
+    password:zod.string.Optional(),
+    firstname:zod.string.Optional(),
+    lastname:zod.string.Optional()
 })
 
 router.put("/",authMiddleware,async(req,res)=>{
