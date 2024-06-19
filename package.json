@@ -3,7 +3,8 @@
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.4.3"
+    "mongoose": "^8.4.3",
+    "react-router-dom": "^6.23.1"
   },
   "name": "paytm",
   "description": "<<<<<<< HEAD\r # paytm-project\r =======",
