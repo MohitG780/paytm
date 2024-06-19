@@ -1,8 +1,8 @@
 const mongoose=require("mongoose");
-mongoose.connect("mongodb+srv://mohitgupta000780:<password>@cluster0.v8ylcnt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
+mongoose.connect("mongodb://localhost:27017/paytm");
 
 const userSchema=mongoose.Schema({
-    username:String,
+    username:String.email(),
     password:String,
     firstname:String,
     lastname:String
